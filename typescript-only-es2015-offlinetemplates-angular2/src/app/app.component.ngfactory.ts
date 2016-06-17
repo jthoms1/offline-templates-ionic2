@@ -60,7 +60,7 @@ class _View_App0 extends import4.DebugAppView<import5.App> {
   }
 }
 export function viewFactory_App0(viewUtils:import7.ViewUtils,parentInjector:import8.Injector,declarationEl:import6.AppElement):import4.AppView<import5.App> {
-  if ((renderType_App === null)) { (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015/src/app/app.component.ts class App - inline template',0,import11.ViewEncapsulation.None,styles_App)); }
+  if ((renderType_App === null)) { (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015-offlinetemplates-angular2/src/app/app.component.ts class App - inline template',0,import11.ViewEncapsulation.None,styles_App)); }
   return new _View_App0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_App1:import0.StaticNodeDebugInfo[] = [

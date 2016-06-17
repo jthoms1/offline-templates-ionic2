@@ -101,7 +101,7 @@ webpackJsonp([2],{
 	}(__WEBPACK_IMPORTED_MODULE_3__angular_core_src_linker_view__.DebugAppView));
 	function viewFactory_App0(viewUtils, parentInjector, declarationEl) {
 	    if ((renderType_App === null)) {
-	        (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015/src/app/app.component.ts class App - inline template', 0, __WEBPACK_IMPORTED_MODULE_9__angular_core_src_metadata_view__.ViewEncapsulation.None, styles_App));
+	        (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015-offlinetemplates-angular2/src/app/app.component.ts class App - inline template', 0, __WEBPACK_IMPORTED_MODULE_9__angular_core_src_metadata_view__.ViewEncapsulation.None, styles_App));
 	    }
 	    return new _View_App0(viewUtils, parentInjector, declarationEl);
 	}

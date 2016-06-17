@@ -34423,7 +34423,8 @@ webpackJsonp([2],{
 	    MyApp = __decorate([
 	        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
 	            selector: 'ion-app',
-	            template: "<ion-nav [root]=\"root\"></ion-nav>"
+	            template: "<ion-nav [root]=\"root\"></ion-nav>",
+	            directives: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["Nav"]]
 	        }), 
 	        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["App"]])
 	    ], MyApp);

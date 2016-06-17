@@ -63,7 +63,7 @@ var _View_App0 = (function (_super) {
 }(import4.DebugAppView));
 export function viewFactory_App0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_App === null)) {
-        (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015/src/app/app.component.ts class App - inline template', 0, import11.ViewEncapsulation.None, styles_App));
+        (renderType_App = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015-offlinetemplates-angular2/src/app/app.component.ts class App - inline template', 0, import11.ViewEncapsulation.None, styles_App));
     }
     return new _View_App0(viewUtils, parentInjector, declarationEl);
 }
