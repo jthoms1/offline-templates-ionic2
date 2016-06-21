@@ -5,75 +5,99 @@
  /* tslint:disable */
 
 import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '@angular/core/src/render/api';
-import * as import2 from '@angular/core/src/linker/view';
-import * as import3 from './app.component';
-import * as import4 from '@angular/core/src/linker/view_utils';
-import * as import5 from '@angular/core/src/di/injector';
-import * as import6 from '@angular/core/src/linker/element';
-import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from '@angular/core/src/metadata/view';
-import * as import10 from 'ionic-angular/components/app/app';
-import * as import11 from '@angular/core/src/linker/component_factory';
+import * as import1 from 'ionic-angular/components/nav/nav';
+import * as import2 from '@angular/core/src/render/api';
+import * as import3 from '@angular/core/src/linker/view';
+import * as import4 from './app.component';
+import * as import5 from '@angular/core/src/linker/element';
+import * as import6 from '@angular/core/src/linker/view_utils';
+import * as import7 from '@angular/core/src/di/injector';
+import * as import8 from '@angular/core/src/linker/view_type';
+import * as import9 from '@angular/core/src/change_detection/change_detection';
+import * as import10 from 'ionic-angular/components/nav/nav.d.ngfactory';
+import * as import11 from 'ionic-angular/components/nav/view-controller';
+import * as import12 from 'ionic-angular/components/nav/nav-controller';
+import * as import13 from 'ionic-angular/components/app/app';
+import * as import14 from 'ionic-angular/config/config';
+import * as import15 from 'ionic-angular/util/keyboard';
+import * as import16 from '@angular/core/src/linker/element_ref';
+import * as import17 from '@angular/core/src/zone/ng_zone';
+import * as import18 from '@angular/core/src/linker/component_resolver';
+import * as import19 from '@angular/core/src/metadata/view';
+import * as import20 from '@angular/core/src/linker/component_factory';
 const styles_MyApp:any[] = [];
-const nodeDebugInfos_MyApp0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([],null,{})];
-var renderType_MyApp:import1.RenderComponentType = null;
-class _View_MyApp0 extends import2.DebugAppView<import3.MyApp> {
+const nodeDebugInfos_MyApp0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.Nav],import1.Nav,{})];
+var renderType_MyApp:import2.RenderComponentType = null;
+class _View_MyApp0 extends import3.DebugAppView<import4.MyApp> {
   _el_0:any;
+  private _appEl_0:import5.AppElement;
+  _Nav_0_4:import1.Nav;
   private _expr_0:any;
-  constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import6.AppElement) {
-    super(_View_MyApp0,renderType_MyApp,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_MyApp0);
+  constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement) {
+    super(_View_MyApp0,renderType_MyApp,import8.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_MyApp0);
   }
-  createInternal(rootSelector:string):import6.AppElement {
+  createInternal(rootSelector:string):import5.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
     this._el_0 = this.renderer.createElement(parentRenderNode,'ion-nav',this.debug(0,0,0));
-    this._expr_0 = import8.uninitialized;
+    this._appEl_0 = new import5.AppElement(0,null,this,this._el_0);
+    var compView_0:any = import10.viewFactory_Nav0(this.viewUtils,this.injector(0),this._appEl_0);
+    this._Nav_0_4 = new import1.Nav(this.parentInjector.get(import11.ViewController,null),this.parentInjector.get(import12.NavController,null),this.parentInjector.get(import13.App),this.parentInjector.get(import14.Config),this.parentInjector.get(import15.Keyboard),new import16.ElementRef(this._el_0),this.parentInjector.get(import17.NgZone),this.renderer,this.parentInjector.get(import18.ComponentResolver));
+    this._appEl_0.initComponent(this._Nav_0_4,[],compView_0);
+    compView_0.create(this._Nav_0_4,[],null);
+    this._expr_0 = import9.uninitialized;
     this.init([],[this._el_0],[],[]);
     return null;
   }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import1.Nav) && (0 === requestNodeIndex))) { return this._Nav_0_4; }
+    return notFoundResult;
+  }
   detectChangesInternal(throwOnChange:boolean):void {
-    this.detectContentChildrenChanges(throwOnChange);
     this.debug(0,0,9);
     const currVal_0:any = this.context.root;
-    if (import4.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
-      this.renderer.setElementProperty(this._el_0,'root',currVal_0);
+    if (import6.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
+      this._Nav_0_4.root = currVal_0;
       this._expr_0 = currVal_0;
     }
+    this.detectContentChildrenChanges(throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
+    if (!throwOnChange) {
+      this.debug(0,0,0);
+      if ((this.cdState === import9.ChangeDetectorState.NeverChecked)) { this._Nav_0_4.ngAfterViewInit(); }
+    }
   }
 }
-export function viewFactory_MyApp0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import6.AppElement):import2.AppView<import3.MyApp> {
-  if ((renderType_MyApp === null)) { (renderType_MyApp = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015-offlinetemplates-ionic2/src/app/app.component.ts class MyApp - inline template',0,import9.ViewEncapsulation.None,styles_MyApp)); }
+export function viewFactory_MyApp0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import3.AppView<import4.MyApp> {
+  if ((renderType_MyApp === null)) { (renderType_MyApp = viewUtils.createRenderComponentType('/Users/joshthomas/Workspace/tree-shake-ionic2/typescript-only-es2015-offlinetemplates-ionic2/src/app/app.component.ts class MyApp - inline template',0,import19.ViewEncapsulation.None,styles_MyApp)); }
   return new _View_MyApp0(viewUtils,parentInjector,declarationEl);
 }
 const styles_MyApp_Host:any[] = [];
-const nodeDebugInfos_MyApp_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import3.MyApp],import3.MyApp,{})];
-var renderType_MyApp_Host:import1.RenderComponentType = null;
-class _View_MyApp_Host0 extends import2.DebugAppView<any> {
+const nodeDebugInfos_MyApp_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import4.MyApp],import4.MyApp,{})];
+var renderType_MyApp_Host:import2.RenderComponentType = null;
+class _View_MyApp_Host0 extends import3.DebugAppView<any> {
   _el_0:any;
-  private _appEl_0:import6.AppElement;
-  _MyApp_0_4:import3.MyApp;
-  constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import6.AppElement) {
-    super(_View_MyApp_Host0,renderType_MyApp_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_MyApp_Host0);
+  private _appEl_0:import5.AppElement;
+  _MyApp_0_4:import4.MyApp;
+  constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement) {
+    super(_View_MyApp_Host0,renderType_MyApp_Host,import8.ViewType.HOST,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_MyApp_Host0);
   }
-  createInternal(rootSelector:string):import6.AppElement {
+  createInternal(rootSelector:string):import5.AppElement {
     this._el_0 = this.selectOrCreateHostElement('ion-app',rootSelector,this.debug(0,0,0));
-    this._appEl_0 = new import6.AppElement(0,null,this,this._el_0);
+    this._appEl_0 = new import5.AppElement(0,null,this,this._el_0);
     var compView_0:any = viewFactory_MyApp0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._MyApp_0_4 = new import3.MyApp(this.parentInjector.get(import10.App));
+    this._MyApp_0_4 = new import4.MyApp(this.parentInjector.get(import13.App));
     this._appEl_0.initComponent(this._MyApp_0_4,[],compView_0);
     compView_0.create(this._MyApp_0_4,this.projectableNodes,null);
     this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import3.MyApp) && (0 === requestNodeIndex))) { return this._MyApp_0_4; }
+    if (((token === import4.MyApp) && (0 === requestNodeIndex))) { return this._MyApp_0_4; }
     return notFoundResult;
   }
 }
-function viewFactory_MyApp_Host0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import6.AppElement):import2.AppView<any> {
+function viewFactory_MyApp_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import3.AppView<any> {
   if ((renderType_MyApp_Host === null)) { (renderType_MyApp_Host = viewUtils.createRenderComponentType('',0,null,styles_MyApp_Host)); }
   return new _View_MyApp_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const MyAppNgFactory:import11.ComponentFactory<import3.MyApp> = new import11.ComponentFactory<import3.MyApp>('ion-app',viewFactory_MyApp_Host0,import3.MyApp);
+export const MyAppNgFactory:import20.ComponentFactory<import4.MyApp> = new import20.ComponentFactory<import4.MyApp>('ion-app',viewFactory_MyApp_Host0,import4.MyApp);

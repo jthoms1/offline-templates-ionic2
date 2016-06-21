@@ -3,8 +3,9 @@ import {App} from 'ionic-angular';
 
 @Component({
   selector: 'ion-page',
-  template: `<ion-content>Hell Ya!
-  </ion-content>`
+  template: `
+  Sup Yo
+  `
 })
 export class Page {
   constructor(app: App) {

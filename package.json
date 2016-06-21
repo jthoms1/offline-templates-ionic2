@@ -35,7 +35,7 @@
     "css-loader": "^0.23.1",
     "es6-promise": "^3.2.1",
     "es6-shim": "^0.35.0",
-    "ionic-angular": "^2.0.0-beta.8",
+	"ionic-angular": "https://github.com/driftyco/ionic/archive/adding-offline-template-compiling.tar.gz",
     "ionic-native": "^1.3.0",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.2",

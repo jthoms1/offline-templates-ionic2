@@ -7,7 +7,7 @@ export var Page = (function () {
     Page.decorators = [
         { type: Component, args: [{
                     selector: 'ion-page',
-                    template: "<ion-content>Hell Ya!\n  </ion-content>"
+                    template: "\n  Sup Yo\n  "
                 },] },
     ];
     /** @nocollapse */

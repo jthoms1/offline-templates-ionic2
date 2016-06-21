@@ -17,27 +17,17 @@ import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from 'ionic-angular/components/app/app';
 import * as import11 from '@angular/core/src/linker/component_factory';
 const styles_Page:any[] = [];
-const nodeDebugInfos_Page0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],null,{}),
-  new import0.StaticNodeDebugInfo([],null,{})
-]
-;
+const nodeDebugInfos_Page0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([],null,{})];
 var renderType_Page:import1.RenderComponentType = null;
 class _View_Page0 extends import2.DebugAppView<import3.Page> {
-  _el_0:any;
-  _text_1:any;
+  _text_0:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import6.AppElement) {
     super(_View_Page0,renderType_Page,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_Page0);
   }
   createInternal(rootSelector:string):import6.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'ion-content',this.debug(0,0,0));
-    this._text_1 = this.renderer.createText(this._el_0,'Hell Ya!\n  ',this.debug(1,0,13));
-    this.init([],[
-      this._el_0,
-      this._text_1
-    ]
-    ,[],[]);
+    this._text_0 = this.renderer.createText(parentRenderNode,'\n  Sup Yo\n  ',this.debug(0,0,0));
+    this.init([],[this._text_0],[],[]);
     return null;
   }
 }
